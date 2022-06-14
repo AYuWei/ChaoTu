@@ -1,0 +1,115 @@
+.wrapper{
+      height: 100%;
+}
+.wrapper .wrapper-item{
+      min-height: 150rpx; 
+      background: rgba(222, 222, 222, 0.3);
+      margin: 32rpx; 
+      border-radius: 10rpx;
+}
+.wrapper .wrapper-item .item-outter{ 
+      display: flex;
+      flex-direction: column;
+}
+.inner-head{
+      height: 100rpx; 
+      display: flex;
+      padding: 16rpx; 
+}
+.inner-head .head-l{
+      margin-top: 2rpx;
+      margin-left: 2rpx;
+      width: 96rpx;
+      height: 96rpx; 
+}
+.inner-head .head-l image{
+      width: 100%;
+      height: 100%;
+      border-radius: 25%;
+}
+.inner-head .head-r{
+      margin: 0rpx 16rpx;
+      line-height: 40rpx;
+      font-size: 34rpx;
+}
+.inner-head .head-r .author{ 
+      margin-top: 16rpx; 
+      /* color: #fa5151; */
+      color: #ffffff;
+      /* color: #7D90A9; */
+}
+.inner-head .head-r .time{  
+      margin-top: 6rpx; 
+      font-size: 24rpx;
+      color: #ffffff;
+}
+.inner-title{
+      font-size: 30rpx;
+      padding: 5rpx 32rpx;
+      max-height: 100rpx;
+      line-height: 50rpx;
+      font-size:24rpx;
+      line-height: 1.4;
+      /* 两行内溢出打点 */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+}
+/* 图片展示 */
+.inner-content{ 
+      min-height: 200rpx;
+      padding: 16rpx; 
+}
+.inner-content .inner-img{  
+      min-height: 200rpx; 
+      display: flex;
+      align-items:flex-start;
+      /* justify-content: space-evenly; */
+      flex-wrap: wrap;
+}
+.inner-content .inner-img .img-list {  
+}
+.inner-content .inner-img .img-list .img-list-i{
+      width: 95%;
+      height: 95%;
+      margin:auto; 
+}
+.inner-content .inner-img .img-list .img-list-i image{
+      width: 100%;
+      height:  100%;  
+}
+/* 底部 */
+.inner-footer {
+      display: flex;
+      height: 80rpx; 
+      /* line-height: 80rpx; */
+}
+.inner-footer .footer-i{
+      flex: 1; 
+}
+.inner-footer .footer-i .footer-ii{    
+     /* width: 0rpx; */
+     width: 100%;
+     margin-top: 10rpx; 
+     height: 60rpx;
+     /* line-height: 60rpx;  */
+     display: flex;  
+}
+.inner-footer .footer-i .footer-ii .ii-t1{
+      flex: 1;
+      text-align: right;
+}
+.inner-footer .footer-i .footer-ii .ii-t2{
+      flex: 1;
+}
+.inner-footer .footer-i image {   
+      width: 50rpx;
+      height: 50rpx;
+}
+.inner-footer .footer-i text{ 
+      font-size: 26rpx;    
+      padding-left: 8rpx;
+      color: #B3B3B3;
+}

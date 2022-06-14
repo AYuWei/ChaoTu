@@ -1,0 +1,59 @@
+<view class="container">
+      <view class="wrapper">
+            <view class="wrapper-item" wx:for="{{ itemList }}">
+                  <view class="item-outter" data-data="{{ item._id }}" bindtap="onActiveWrapper">
+                        <!-- 头部信息 -->
+                        <view class="inner-head">
+                             <view class="head-l">
+                                    <image src="{{item.protraitUrl}}"></image>
+                             </view>
+                             <view class="head-r">
+                                    <view class="author">{{item.authorName}}</view>
+                                    <view class="time">{{item.createTime}}</view>
+                             </view>
+                        </view>
+                        <view class="inner-title">
+                              {{item.content}}
+                        </view>
+                        <!-- 图片展示区 -->
+                        <view class="inner-content">
+                              <view class="inner-img">
+                                    <view class="img-list" wx:for="{{item.imageList}}"
+                                          style="width:calc(  {{pageWidth / 3 }}rpx - 32rpx );height:calc(  {{pageWidth / 3 }}rpx - 32rpx );"
+                                    >
+                                          <view class="img-list-i" >
+                                                <image mode="aspectFill" lazy-load="true" src="{{item}}"></image>
+                                          </view>
+                                    </view> 
+                              </view>
+                        </view>
+                        <!-- <view class="inner-footer">
+                              <view class="footer-i">
+                                   <view class="footer-ii"> 
+                                          <view class="ii-t1">
+                                                <image src="../../icon/app/msg2.png"></image>
+                                          </view>
+                                          <view class="ii-t2"><text>0</text></view>
+                                   </view>
+                              </view>
+                              <view class="footer-i">
+                                    <view class="footer-ii"> 
+                                          <view class="ii-t1">
+                                                <image src="../../icon/app/shoucang.png"></image>
+                                          </view>
+                                          <view class="ii-t2"><text>0</text></view>
+                                   </view>
+                              </view>
+                              <view class="footer-i">
+                                    <view class="footer-ii"> 
+                                          <view class="ii-t1">
+                                                <image src="../../icon/app/msg2.png"></image>
+                                          </view>
+                                          <view class="ii-t2"><text>0</text></view>
+                                   </view>
+                              </view>
+                        </view> -->
+                  </view>
+            </view>
+      </view>
+</view>

@@ -1,0 +1,49 @@
+<view class="container">
+      <view class="wrapper">
+            <view class="wrapper-item" >
+                  <view class="item-head" bindtap="onLogon">
+                        <image wx:if="{{isLogon}}" mode="aspectFill" src="{{userData.avatarUrl}}"></image>
+                        <text wx:else>未登录</text>
+                  </view>
+            </view> 
+            <view class="wrapper-item i" >
+                  <view class="item-list" bindtap="onActiveSC">
+                        <view class="text">
+                              <view class="img">
+                                    <image src="../../icon/app/sc.png"></image>
+                              </view>
+                        收藏</view>
+                        <view class="icon">
+                              <image src="../../icon/app/right.png"></image>
+                        </view>
+                  </view>
+                  <view class="item-list" bindtap="onActiveFk">
+                        <view class="text">
+                              <view class="img">
+                                    <image src="../../icon/app/fk.png"></image>
+                              </view>
+                        反馈</view>
+                        <view class="icon">
+                              <image src="../../icon/app/right.png"></image>
+                        </view>
+                  </view>
+                  <view class="item-list" bindtap="onActiveLX">
+                        <view class="text">
+                              <view class="img">
+                                    <image src="../../icon/app/lx.png"></image>
+                              </view>
+                        联系我们</view>
+                        <view class="icon">
+                              <image src="../../icon/app/right.png"></image>
+                        </view>
+                  </view>
+                  <view class="item-list" bindtap="onActiveHC">
+                        <view class="text">
+                              <view class="img">
+                                    <image src="../../icon/app/hc.png"></image>
+                              </view>
+                        清除缓存</view>
+                  </view>
+            </view>
+      </view>
+</view>

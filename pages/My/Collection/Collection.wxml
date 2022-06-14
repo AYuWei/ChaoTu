@@ -1,0 +1,22 @@
+<view class="container">
+      <view class="wrapper">
+            <view class="wrapper-item" wx:for="{{collectArr}}" data-data="{{ item._id }}" catchtap="onActiveWrapper" >
+                  <view class="head">
+                        <view class="img">
+                              <image mode="aspectFill" src="{{ item.imageList[0] }}"></image>
+                        </view>
+                        <view class="title">
+                              <view class="content">
+                                    {{item.content}}
+                              </view>
+                              <view class="footer">
+                                    <view class="author">{{ item.author }}</view>
+                                    <view class="time">发布于：{{ item.createTime }}</view>
+                              </view>
+                        </view>
+                  </view>
+                 
+            </view>
+            
+      </view>
+</view>

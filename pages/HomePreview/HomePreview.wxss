@@ -1,0 +1,223 @@
+.wrapper{
+      height: 100%;
+      color: #E6E6E6;
+}
+.wrapper .wrapper-item{
+      min-height: 150rpx; 
+      background: rgba(222, 222, 222, 0.3);
+      margin-top: 32rpx;
+      margin-bottom: 64rpx;
+      border-radius: 10rpx;
+}
+.wrapper .wrapper-item .item-outter{ 
+      display: flex;
+      flex-direction: column;
+}
+.inner-head{
+      height: 250rpx; 
+      /* background: rgba(222, 222, 222, 0.1); */
+      text-align: center;
+      padding: 16rpx; 
+}
+.inner-head .head-l{ 
+      margin: auto;
+      width: 150rpx; 
+      height: 150rpx; 
+}
+.inner-head .head-l image{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; 
+}
+.inner-head .head-r{
+      margin: 0rpx 16rpx;
+      line-height: 40rpx; 
+}
+.inner-head .head-r .author{ 
+      margin-top: 16rpx;  
+      color: #ffffff; 
+      font-size: 34rpx;
+}
+.inner-head .head-r .time{  
+      margin-top: 6rpx; 
+      font-size: 24rpx;
+      color: #ffffff;
+}
+.inner-title{ 
+      padding: 5rpx 32rpx;
+      min-height: 100rpx;
+      line-height: 50rpx;
+      font-size:26rpx;  
+      line-height: 1.5 ;
+      text-align: justify;
+}
+/* 图片展示 */
+.inner-content{ 
+      min-height: 200rpx;
+      padding: 16rpx;  
+}
+.inner-content .inner-img{  
+      min-height: 200rpx; 
+      display: flex;
+      align-items:flex-start;  
+      flex-wrap: wrap; 
+} 
+.inner-content .inner-img .img-list .img-list-i{
+      width: 95%;
+      height: 95%; 
+      margin:auto;  
+}
+.inner-content .inner-img .img-list .img-list-i image{
+      width: 100%;
+      height: 100%;
+}
+/* 底部 */
+.inner-footer {
+      display: flex;
+      height: 80rpx;  
+      margin: 16rpx 0rpx;
+}
+.inner-footer .footer-i{
+      flex: 1; 
+      display: flex; 
+      justify-content: space-around;
+}
+.inner-footer .footer-i .footer-ii button{ 
+     width: 100%; 
+     padding: 0rpx;
+     margin: 0rpx;
+     height: 60rpx;  
+     background: transparent; 
+     
+}  
+.inner-footer .footer-i .footer-ii button .but-v{
+      width: 100%;
+      height: 100%; 
+      display: flex;
+}
+.inner-footer .footer-i .footer-ii button .but-v .ii-t2{
+     margin-top: 10rpx;
+     color:#B3B3B3;
+}
+/* 转发按钮 */
+.inner-footer .footer-i .footer-ii{ 
+      margin-top: 10rpx;  
+      height: 60rpx; 
+      display: flex;   
+ } 
+.inner-footer .footer-i .footer-ii .ii-t1{ 
+      margin-top: 15rpx;  
+      height: 60rpx; 
+      display: flex;  
+ }  
+ .inner-footer .footer-i .footer-ii .sclove text{  
+       color: #ff9933 ;
+ } 
+.inner-footer .footer-i image {   
+      width: 38rpx;
+      height: 38rpx;
+      padding-right: 8rpx;
+
+}
+.inner-footer .footer-i text{ 
+      font-size: 26rpx;  
+      color: #B3B3B3;
+}
+/* 评论 */
+.container{   
+      height: 60rpx;
+      line-height: 60rpx; 
+      padding-left: 16rpx; 
+      padding-right: 16rpx; 
+}
+.container .container-title{
+      height: 60rpx; 
+      display: flex;   
+}
+.container .container-title .userImg{
+      width: 60rpx;
+      border-radius: 50%;
+      height: 60rpx; 
+      background: rgba(222, 222, 222, 0.3);
+} 
+.container .container-title .userImg image{
+      width: 60rpx;
+      height: 60rpx; 
+      border-radius: 50%;
+}
+.container .container-title .inp-view{
+      flex: 1; 
+      height: 60rpx;
+      background: rgba(222, 222, 222, 0.3); 
+      margin-left: 8rpx;
+      border-radius: 50rpx;
+      position: relative;
+}
+.container .container-title .inp{
+      height: 60rpx;
+      font-size: 28rpx;
+      padding-left: 32rpx;
+      padding-right: 60rpx;
+}
+
+.container .container-title .send{
+      height: 60rpx;
+      width: 60rpx; 
+      position: absolute; 
+      right: -10rpx; 
+      top: 0rpx;
+}
+.container .container-title .send image{
+      width: 100%;
+      height: 100%;
+}
+/* 评论 */
+.footer-Comment{ 
+      min-height: 50rpx;   
+      margin: 16rpx; 
+}
+.footer-Comment .comment-title{
+      font-size: 26rpx;    
+      color: #B3B3B3; 
+      padding-left: 16rpx;
+      padding-bottom: 8rpx;
+      border-bottom: 2rpx solid #999;
+}
+.dian{
+      padding: 0rpx 6rpx;
+      font-size: 32rpx;
+      font-weight: 600;
+}  
+/* 每一条记录 */
+.footer-Comment .comment-item{
+      padding: 16rpx 0rpx;
+      margin: 16rpx ; 
+      display: flex;
+      box-shadow: 0rpx 1rpx rgba(222, 222, 222, 0.1);
+} 
+.c-item-l .img{
+      width: 70rpx;
+      height: 70rpx;
+      border-radius: 50%;
+}
+.c-item-r{ 
+      padding: 0rpx 16rpx;
+}
+.c-item-r .r-author-time{ 
+      padding-top: 16rpx;
+      display: flex;
+      height: 40rpx;   
+      line-height: 40rpx;  
+}
+.c-item-r .r-author-time .r-author{
+      font-size: 28rpx;  
+      color: #C4C4C4;
+}
+.c-item-r .r-author-time .r-time{ 
+      font-size: 24rpx; 
+      color: #B3B3B3;
+      padding-left: 16rpx;
+}
+.c-item-r .r-comment{
+      font-size:26rpx; 
+}

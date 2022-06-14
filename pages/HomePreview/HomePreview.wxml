@@ -1,0 +1,126 @@
+<view class="container">
+      <view class="wrapper">
+            <view class="wrapper-item">
+                  <view class="item-outter">
+                        <!-- 头部信息 -->
+                        <view class="inner-head">
+                             <view class="head-l">
+                                    <image  mode="aspectFill" src="{{workData.protraitUrl}}"></image>
+                             </view>
+                             <view class="head-r">
+                                    <view class="author">{{workData.authorName}}</view>
+                                    <view class="time">{{workData.createTime}}</view>
+                             </view>
+                        </view>
+                        <view class="inner-title">
+                              {{workData.content}}
+                        </view>
+                        <!-- 图片展示区 -->
+                        <view class="inner-content">
+                              <view class="inner-img">
+                                    <view class="img-list" wx:for="{{workData.imageList}}"
+                                          wx:key="{{ index }}"
+                                          style="width:calc(  {{pageWidth / 3 }}rpx - 22rpx );height:calc(  {{pageWidth / 3 }}rpx - 22rpx );"
+                                          data-index="{{ index }}"
+                                          catchtap="previewMedia"
+                                    >
+                                          <view class="img-list-i">
+                                                <image  mode="aspectFill"  src="{{item}}"></image>
+                                          </view>
+                                    </view> 
+                              </view>
+                        </view>
+                        <!-- 底部点赞 -->
+                        <view class="inner-footer">
+                              <view class="footer-i">
+                                   <!-- <view class="footer-ii" catchtap="onShareMenu"> 
+                                          <view class="ii-t1">
+                                                <image src="../../icon/app/zf.png"></image>
+                                          </view>
+                                          <view class="ii-t2"><text>转发</text></view>
+                                   </view> -->
+                                    <view class="footer-ii"> 
+                                          <button open-type="share" catchtap="onShareMenu">
+                                                <view class="but-v">
+                                                      <view class="ii-t1">
+                                                            <image src="../../icon/app/zf.png"></image>
+                                                      </view>
+                                                      <view class="ii-t2"><text>转发</text></view>
+                                                </view> 
+                                          </button>        
+                                    </view>
+                              </view>
+                              <view class="footer-i">
+                                    <view class="footer-ii" catchtap="onCollect"> 
+                                          <view class="ii-t1">
+                                                <!-- <image src="../../icon/app/sc.png"></image> -->
+                                                <image src="{{ iscollect ? '../../icon/app/sclove.png' : '../../icon/app/sc.png' }}"></image>
+                                          </view>
+                                          <view class="ii-t2 {{iscollect ? 'sclove' : ''}}"><text>{{iscollect ? '已收藏' : '收藏'}}</text></view>
+                                   </view>
+                              </view>
+                              <view class="footer-i">
+                                    <view class="footer-ii" catchtap="onLike"> 
+                                          <view class="ii-t1">
+                                                <image src="../../icon/app/dz.png"></image>
+                                          </view>
+                                          <view class="ii-t2"><text>{{ like  }}</text></view>
+                                   </view>
+                              </view>
+                        </view>
+                        <!-- 评论 -->
+                        <view class="container">
+                              <view class="container-title" >
+                                    <view class="userImg">
+                                          <image src="{{userData.avatarUrl}}"></image>
+                                    </view>       
+                                    <view class="inp-view"> 
+                                          <input type="text" maxlength="-1"
+                                          class="inp" 
+                                                placeholder="{{ inputplaceholder }}"
+                                                placeholder-style="color:#AAAAAA"
+                                                confirm-type="send"
+                                                cursor-spacing="16"
+                                                bindconfirm="onSend" 
+                                                value="{{valueComment}}"
+                                                adjust-position="false"
+                                                bindkeyboardheightchange="inpFocus" 
+                                                bindinput="inpValue" 
+                                                bindblur="inpBlur">
+                                          </input> 
+                                          <view class="send" bindtap="onButSend">
+                                                <image src="../../icon/app/send.png"></image>
+                                          </view>
+                                    </view>       
+                              </view>
+                        </view>
+                        <!-- 
+                         <!-- 所有评论 -->
+                        <view class="footer-Comment" >
+                             <view class="comment-title">
+                                    <text>评论</text>
+                                    <text class="dian">·</text>
+                                    <text>{{itemTotal}} 条</text>    
+                             </view>
+                             <!-- 每一条记录 -->
+                             <view class="comment-item" wx:for="{{commentitem}}" data-userId="{{item}}" data-index="{{ index }}" bindlongtap="bindLongTap">
+                                    <!-- 头像 -->
+                                    <view class="c-item-l">
+                                          <image class="img" src="{{ item.authorUrl }}"></image>
+                                    </view>
+                                    <!-- 名称日期 + 内容 -->
+                                    <view class="c-item-r">
+                                          <view class="r-author-time">
+                                                <view class="r-author">{{item.authorName}}</view>
+                                                <view class="r-time">{{item.createTime}}</view>
+                                          </view>
+                                          <view class="r-comment">
+                                                {{item.comment}}
+                                          </view>
+                                    </view>
+                             </view>
+                        </view>
+                  </view>
+            </view>
+      </view>
+</view>

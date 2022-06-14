@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+  "navigationBarTitleText": "潮图",
+  "pageOrientation":"auto",
+  "enablePullDownRefresh":true
+}

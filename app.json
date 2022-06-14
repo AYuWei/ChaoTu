@@ -1,0 +1,42 @@
+{
+      "pages": [  
+            
+            "pages/My/My", 
+            "pages/Home/Home",
+            "pages/HomePreview/HomePreview",  
+            "pages/My/Feedback/Feedback",
+            "pages/My/Collection/Collection"
+      ],
+      "window": {
+            "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#111",
+            "backgroundColor": "#222",
+            "backgroundColorBottom": "#222",
+            "navigationBarTitleText": "小威潮图",
+            "navigationBarTextStyle": "white"
+         
+      },
+      "tabBar": {
+            "color": "#333",
+            "selectedColor": "#c4c4c4",
+            "backgroundColor": "#111",
+            "borderStyle": "white",
+            "pageOrientation": "auto",
+            "list": [
+                  {
+                        "pagePath": "pages/Home/Home",
+                        "text": "潮图",
+                        "iconPath": "./icon/app/home_2.png",
+                        "selectedIconPath": "./icon/app/home_1.png"
+                  },
+                  {
+                        "pagePath": "pages/My/My",
+                        "text": "我的",
+                        "iconPath": "./icon/app/my_2.png",
+                        "selectedIconPath": "./icon/app/my_1.png"
+                  }
+            ]
+      },
+      "style": "v2",
+      "sitemapLocation": "sitemap.json"
+}

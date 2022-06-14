@@ -1,0 +1,27 @@
+<view class="container">
+      <view class="wrapper">
+            <view class="coment"> 
+                  <textarea 
+                  name="feedback"  
+                  show-confirm-bar="true"
+                  bindinput="inputTitle" 
+                  disable-default-padding="true"
+                  maxlength="200"  
+                  value="{{title}}"
+                  confirm-type="done" 
+                  placeholder="输入大于15且小于200的反馈内容！"
+                  placeholder-style="font-size: 34rpx;color:rgba(222, 222, 222, .3)"
+                  >
+                  </textarea>
+                  <text class="word">{{ wordNumber }}/200</text>
+            </view>
+            <view class="but">
+                  <button 
+                        type="{{type}}"  
+                        loading="{{isLoading}}"
+                        bindtap="sendingMes"
+                        plain="{{isLoading}}"
+                  >{{butName}}</button>
+            </view>
+      </view>
+</view>

@@ -1,0 +1,51 @@
+.wrapper{
+      height: 100%;
+}
+.wrapper .wrapper-item{
+      min-height: 150rpx; 
+      background: rgba(222, 222, 222, 0.3);
+      margin: 16rpx; 
+      padding:16rpx;
+      border-radius: 10rpx;
+}
+.wrapper .wrapper-item .head{
+      display: flex;
+      height: 150rpx;
+}
+.wrapper .wrapper-item .head .img{
+      width: 150rpx;
+      height: 150rpx;
+      background: rgba(222, 222, 222, 0.1);
+}
+.wrapper .wrapper-item .head .img image{
+      width: 150rpx;
+      height: 150rpx;
+}
+.wrapper .wrapper-item .head .title{
+      width: 80%;
+      color: rgba(222, 222, 222, 0.9);
+      height: 150rpx;
+}
+.wrapper .wrapper-item .head .title .content{
+      padding: 0rpx 16rpx;
+      font-size:28rpx;  
+      max-height: 100rpx;
+      line-height: 50rpx; 
+      /* 两行内溢出打点 */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; 
+}
+.wrapper .wrapper-item .head .title .footer{
+      display: flex;
+      padding: 0rpx 16rpx;
+      line-height: 50rpx;
+      font-size: 24rpx;
+      color: rgba(222, 222, 222, 0.9);
+}
+.wrapper .wrapper-item .head .title .footer .time{
+      padding-left: 16rpx;
+      color: rgba(222, 222, 222, 0.7);
+}
